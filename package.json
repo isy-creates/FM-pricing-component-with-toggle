@@ -1,7 +1,7 @@
 {
   "name": "fm-pricing-component-with-toggle",
   "version": "1.0.0",
-  "description": "![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)",
+  "description": "Coding challenge from Frontend Mentors",
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all -s sass:build -p babel sass:watch",

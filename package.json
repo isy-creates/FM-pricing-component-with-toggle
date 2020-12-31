@@ -1,0 +1,34 @@
+{
+  "name": "fm-pricing-component-with-toggle",
+  "version": "1.0.0",
+  "description": "![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all -s sass:build -p babel sass:watch",
+    "babel": "babel -w src/js -d lib/js",
+    "sass:build": "node-sass src/scss -o lib/css",
+    "sass:watch": "node-sass -w src/scss -o lib/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isy-creates/FM-pricing-component-with-toggle.git"
+  },
+  "author": "Isy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isy-creates/FM-pricing-component-with-toggle.git/issues"
+  },
+  "homepage": "https://github.com/isy-creates/FM-pricing-component-with-toggle.git#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@start/plugin-lib-babel": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}

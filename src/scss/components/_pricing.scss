@@ -1,0 +1,29 @@
+.pricing {
+
+  max-width: 105.2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top:$large;
+
+  &__options{
+    @include lg {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__item{
+    flex-grow: 1;
+    border-radius: 1rem;
+
+    @include lg {
+      &--is-left{
+        border-radius: 1rem 0 0 1rem;
+      }
+  
+      &--is-right{
+        border-radius: 0 1rem 1rem 0;
+      }
+    }
+  }
+}

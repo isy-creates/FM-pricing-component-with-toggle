@@ -1,0 +1,20 @@
+.card {
+  list-style-type: none;
+  background-color: #fff;
+  padding:$medium 2.9rem;
+  box-shadow: 0 0 15px hsla(237, 63%, 64%, .1);
+  margin-bottom: $medium;
+
+  @include lg{
+    margin: 0;
+  }
+
+  &--is-purple{
+    @include gradient(to bottom);
+    color: #fff;
+    
+    @include lg{
+      padding: 6rem 2.9rem;
+    }
+  }
+}

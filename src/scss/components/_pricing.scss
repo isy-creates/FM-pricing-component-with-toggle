@@ -26,4 +26,17 @@
       }
     }
   }
+
+  &__switch {
+    display: flex;
+    justify-content: space-between;
+    max-width: 23.9rem;
+    align-items: center;
+    margin: 0 auto $large;
+  }
+
+  &__text{
+    font-weight: 700;
+    color:$light;
+  }
 }

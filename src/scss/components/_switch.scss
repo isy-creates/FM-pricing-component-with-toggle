@@ -1,4 +1,54 @@
 .switch {
-  margin-bottom: $extra-large;
-  display: block;
+  display: inline-block;
+  height: 3.2rem;
+  width: 5.6rem;
+  position: relative;
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked {
+      + .switch__slider {
+        &::before{
+          left: calc(100% - 4px);
+          transform: translateX(-100%);
+        }
+      }
+    }
+
+    &:active{
+      + .switch__slider{
+        opacity: .4;
+        &::before {
+          width: 2.8rem;
+        }
+      }
+    }
+  }
+
+  &__slider{
+    cursor: pointer;
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @include gradient(to right);
+    transition: .4s;
+
+    &:before{
+      position: absolute;
+      content:'';
+      height: 2.4rem;
+      width: 2.4rem;
+      left: .4rem;
+      top:.4rem;
+      background-color: #ffffff;
+      border-radius: 100%;
+      transition: all .4s;
+    }
+  }
 }

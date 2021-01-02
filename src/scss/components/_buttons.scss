@@ -1,0 +1,58 @@
+.btn {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  color: $secondary;
+  padding: 1.35rem 0;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  position: relative;
+  z-index: 5;
+  background-color: transparent;
+  overflow: hidden;
+
+  &::before {
+    content:'';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+  }
+
+  &:hover {     
+    &::before {
+      right:-100%;
+    }
+  }
+
+  &--is-white{
+
+    &::before {
+      background-color: #fff;
+    }
+
+    &:hover {
+      color:#fff;
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+  }
+
+  &--is-purple{
+    
+    &::before {
+      @include gradient(to right);
+    }
+
+    &:hover {
+      color: $secondary;
+      box-shadow: inset 0 0 0 1px $text-color-dark;
+    }
+    
+    color:#fff;
+  }
+  
+}

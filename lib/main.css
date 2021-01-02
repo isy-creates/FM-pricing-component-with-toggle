@@ -453,15 +453,6 @@ body {
         border-radius: 1rem 0 0 1rem; }
       .pricing__item--is-right {
         border-radius: 0 1rem 1rem 0; } }
-  .pricing__switch {
-    display: flex;
-    justify-content: space-between;
-    max-width: 23.9rem;
-    align-items: center;
-    margin: 0 auto 4.1rem; }
-  .pricing__text {
-    font-weight: 700;
-    color: #b3b5c6; }
 
 .card {
   list-style-type: none;
@@ -480,75 +471,5 @@ body {
         padding: 6rem 2.9rem; } }
 
 .switch {
-  display: inline-block;
-  height: 3.2rem;
-  width: 5.6rem;
-  position: relative; }
-  .switch__checkbox {
-    opacity: 0;
-    width: 0;
-    height: 0; }
-    .switch__checkbox:checked + .switch__slider::before {
-      left: calc(100% - 4px);
-      transform: translateX(-100%); }
-    .switch__checkbox:active + .switch__slider {
-      opacity: .4; }
-      .switch__checkbox:active + .switch__slider::before {
-        width: 2.8rem; }
-  .switch__slider {
-    cursor: pointer;
-    border-radius: 3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(to right, #a3a8f0, #696fdd);
-    transition: .4s; }
-    .switch__slider:before {
-      position: absolute;
-      content: '';
-      height: 2.4rem;
-      width: 2.4rem;
-      left: .4rem;
-      top: .4rem;
-      background-color: #ffffff;
-      border-radius: 100%;
-      transition: all .4s; }
-
-.btn {
-  text-decoration: none;
-  display: block;
-  font-weight: 700;
-  color: #696fdd;
-  padding: 1.35rem 0;
-  border-radius: .5rem;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  position: relative;
-  z-index: 5;
-  background-color: transparent;
-  overflow: hidden; }
-  .btn::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all .5s ease-in-out; }
-  .btn:hover::before {
-    right: -100%; }
-  .btn--is-white::before {
-    background-color: #fff; }
-  .btn--is-white:hover {
-    color: #fff;
-    box-shadow: inset 0 0 0 1px #fff; }
-  .btn--is-purple {
-    color: #fff; }
-    .btn--is-purple::before {
-      background-image: linear-gradient(to right, #a3a8f0, #696fdd); }
-    .btn--is-purple:hover {
-      color: #696fdd;
-      box-shadow: inset 0 0 0 1px #494c5f; }
+  margin-bottom: 8.2rem;
+  display: block; }

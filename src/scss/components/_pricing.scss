@@ -12,7 +12,7 @@
     }
   }
 
-  &__item{
+  &__items{
     flex-grow: 1;
     border-radius: 1rem;
 
@@ -24,6 +24,28 @@
       &--is-right{
         border-radius: 0 1rem 1rem 0;
       }
+    }
+  }
+
+  &__item {
+    font-weight: 700;
+    padding: 1.9rem 0;
+
+    &--is-large{
+      font-size: 7.1rem;
+      padding: 0 0 3rem;
+      color: $text-color-dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--has-btn{
+      padding-top: $medium;
+    }
+
+    &--large {
+      font-size: 1.8rem;
     }
   }
 

@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.is-hidden {
+  visibility: hidden;
+  height: 0;
+  padding: 0 !important; }
+
+.has-border-bottom {
+  border-bottom: 1px solid #dedede; }
+  .has-border-bottom:last-of-type {
+    border: none; }
+
+.is--currency {
+  font-size: 3.8rem;
+  padding-right: 10px; }
+
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.9rem;
   color: #6d708d;
   font-weight: 700;
   margin-bottom: 4.1rem; }
@@ -445,14 +459,28 @@ body {
     .pricing__options {
       display: flex;
       align-items: center; } }
-  .pricing__item {
+  .pricing__items {
     flex-grow: 1;
     border-radius: 1rem; }
     @media (min-width: 992px) {
-      .pricing__item--is-left {
+      .pricing__items--is-left {
         border-radius: 1rem 0 0 1rem; }
-      .pricing__item--is-right {
+      .pricing__items--is-right {
         border-radius: 0 1rem 1rem 0; } }
+  .pricing__item {
+    font-weight: 700;
+    padding: 1.9rem 0; }
+    .pricing__item--is-large {
+      font-size: 7.1rem;
+      padding: 0 0 3rem;
+      color: #494c5f;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .pricing__item--has-btn {
+      padding-top: 3.1rem; }
+    .pricing__item--large {
+      font-size: 1.8rem; }
   .pricing__switch {
     display: flex;
     justify-content: space-between;
@@ -466,7 +494,7 @@ body {
 .card {
   list-style-type: none;
   background-color: #fff;
-  padding: 3.1rem 2.9rem;
+  padding: 1.4rem 2.9rem;
   box-shadow: 0 0 15px rgba(105, 111, 221, 0.1);
   margin-bottom: 3.1rem; }
   @media (min-width: 992px) {
@@ -475,9 +503,13 @@ body {
   .card--is-purple {
     background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
     color: #fff; }
+    .card--is-purple .has-border-bottom {
+      border-color: #f6f6fe; }
+    .card--is-purple .pricing__item--is-large {
+      color: #fff; }
     @media (min-width: 992px) {
       .card--is-purple {
-        padding: 6rem 2.9rem; } }
+        padding: 3.9rem 2.9rem; } }
 
 .switch {
   display: inline-block;

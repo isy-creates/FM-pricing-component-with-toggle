@@ -1,0 +1,17 @@
+.is-hidden{
+  visibility: hidden;
+  height: 0;
+  padding: 0 !important;
+}
+
+.has-border-bottom {
+  border-bottom: 1px solid $line-color;
+  &:last-of-type {
+    border:none;
+  }
+}
+
+.is--currency {
+  font-size: 3.8rem;
+  padding-right: 10px;
+}

@@ -1,7 +1,7 @@
 .card {
   list-style-type: none;
   background-color: #fff;
-  padding:$medium 2.9rem;
+  padding:1.4rem 2.9rem;
   box-shadow: 0 0 15px hsla(237, 63%, 64%, .1);
   margin-bottom: $medium;
 
@@ -12,9 +12,17 @@
   &--is-purple{
     @include gradient(to bottom);
     color: #fff;
+
+    .has-border-bottom{
+      border-color: $background;
+    }
+
+    .pricing__item--is-large {
+      color:#fff;
+    }
     
     @include lg{
-      padding: 6rem 2.9rem;
+      padding: 3.9rem 2.9rem;
     }
   }
 }
